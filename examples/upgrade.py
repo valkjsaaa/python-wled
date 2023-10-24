@@ -3,7 +3,7 @@
 
 import asyncio
 
-from wled import WLED
+from wled2 import WLED
 
 
 async def main() -> None:

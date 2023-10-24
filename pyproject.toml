@@ -16,9 +16,9 @@ homepage = "https://github.com/frenck/python-wled"
 keywords = ["wled", "api", "async", "client"]
 license = "MIT"
 maintainers = ["Franck Nijhof <opensource@frenck.dev>"]
-name = "wled"
+name = "wled2"
 packages = [
-  {include = "wled", from = "src"},
+  {include = "wled2", from = "src"},
 ]
 readme = "README.md"
 repository = "https://github.com/frenck/python-wled"
@@ -57,7 +57,7 @@ yamllint = "1.32.0"
 
 [tool.coverage.run]
 plugins = ["covdefaults"]
-source = ["wled"]
+source = ["wled2"]
 
 [tool.coverage.report]
 fail_under = 53
@@ -151,7 +151,7 @@ fixture-parentheses = false
 mark-parentheses = false
 
 [tool.ruff.isort]
-known-first-party = ["wled"]
+known-first-party = ["wled2"]
 
 [tool.ruff.mccabe]
 max-complexity = 25

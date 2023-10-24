@@ -1,4 +1,4 @@
-"""Tests for `wled.WLED`."""
+"""Tests for `wled2.WLED`."""
 import asyncio
 from collections.abc import Generator
 from unittest.mock import patch
@@ -15,7 +15,7 @@ from wled.exceptions import WLEDConnectionError, WLEDError
 def _mock_get_version_from_github() -> Generator[None, None, None]:
     """Patch out connection to GitHub."""
     with patch(
-        "wled.WLED.get_wled_versions_from_github",
+        "wled2.WLED.get_wled_versions_from_github",
         return_value={"version_latest_stable": None, "version_latest_beta": None},
         side_effect=WLEDConnectionError,
     ):

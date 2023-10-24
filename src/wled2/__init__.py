@@ -23,7 +23,7 @@ from .models import (
     State,
     Sync,
 )
-from .wled import WLED
+from .wled2 import WLED
 
 __all__ = [
     "Device",

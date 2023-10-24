@@ -26,7 +26,7 @@ the behavior of WLED.
 ## Installation
 
 ```bash
-pip install wled
+pip install wled2
 ```
 
 ## Usage
@@ -39,7 +39,7 @@ from wled import WLED
 
 async def main() -> None:
     """Show example on controlling your WLED device."""
-    async with WLED("wled-frenck.local") as led:
+    async with WLED("wled2-frenck.local") as led:
         device = await led.update()
         print(device.info.version)
 
